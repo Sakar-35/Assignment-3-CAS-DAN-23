@@ -147,7 +147,8 @@ class EnhancedImageProcessor:
         # Converting Image
         rgb = cv2.cvtColor(self.original_image, cv2.COLOR_BGR2RGB)
         pil_img = Image.fromarray(rgb)
-        pil_img.thumbnail((500, 450))  # fit to canvas area
+        pil_img=pil_img.resize((500,400))
+        
         self.displayed_orig_width, self.displayed_orig_height = pil_img.size
 
         tk_img = ImageTk.PhotoImage(pil_img)
