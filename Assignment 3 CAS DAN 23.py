@@ -35,6 +35,9 @@ helpmenu=tk.Menu(menu)
 menu.add_cascade(label="Help",menu=helpmenu,command=main_menu_task)
 helpmenu.add_command(label="Contact Us",command=main_menu_task)
 
+thank_you_label=tk.Label(root,text="Presented by:\n ARYAN RAYAMAJHI\n MEENU DEVI MEENU DEVI\n RIWAJ ADHIKARI\n SAKAR KHADKA")
+thank_you_label.pack(side="top")
+
 class EnhancedImageProcessor:
     def __init__(self, root):
         self.root = root
